@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+body {
+    margin: 0;
+}
+
+#top_menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dark-mode-switch {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-align:center;
+}
+
+.background {
+    margin-top: 0;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+/* CALENDAR */
+
+/* Calendar Icons */
+.icon {
+    font-family: 'Material Icons', serif;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+/* Calendar */
+.calendar {
+    margin-top: 50px;
+    display: block;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin:5% auto;
+}
+
+.calendar .header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 115%;
+    padding: 1.5em 0;
+}
+
+.calendar .header .icon {
+    cursor: pointer;
+    transition: .15s ease-out;
+}
+
+.calendar .header .icon:hover {
+    transform: scale(1.75);
+    transition: .25s ease-out;
+    color: #791822;
+}
+    
+.calendar .header .icon:first-of-type {
+    margin-left: 1em;
+}
+    
+.calendar .header .icon:last-of-type {
+    margin-right: 1em;
+}
+    
+.calendar .days {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: gray;
+    font-size: 70%;
+    padding: .75em 0;
+}
+
+.calendar .disabled {
+    pointer-events: none;
+}
+
+.calendar .cell .number {
+    font-size: 82.5%;
+    line-height: 1;
+    top: .75em;
+    right: .75em;
+}
